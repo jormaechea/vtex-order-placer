@@ -59,6 +59,6 @@ This are the available configuration options with it's default values:
   "minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
   "maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
   "customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses
-  "paymentSystemId": "" // The payment system ID that should be used to place the orders
+  "paymentSystemId": null // The payment system ID (Number) that should be used to place the orders
 }
 ```
