@@ -47,15 +47,8 @@ This are the available configuration options with it's default values:
   "salesChannel": 1, // The sales channel where orders will be placed
   "seller": "1", // The seller where orders will be placed
   "itemsSearchText": "", // Some text to search products that will be used for placing orders
-  "itemsSearchFilter": { // Filters to search products that will be used for placing orders. You can choose only one filter so far.
-    "productId": null,
-    "skuId": null,
-    "referenceId": null,
-    "ean": null,
-    "categoryTree": null,
-    "priceRange": null,
-    "clusterId": null
-  },
+  "itemsSearchFilter": [] // Filters to search products that will be used for placing orders.
+                          // Each element of the array must be an object with two properties: `type` and `value`. `type` can be one of the following: `productId`, `skuId`, `referenceId`, `ean`, `categoryTree`, `priceRange`, `clusterId`
   "minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
   "maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
   "customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses

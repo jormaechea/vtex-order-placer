@@ -38,6 +38,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "lllog": "^1.1.2",
+    "qs": "^6.9.4",
     "rc": "^1.2.8",
     "validatorjs": "^3.18.1"
   }
