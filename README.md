@@ -36,29 +36,29 @@ You can also pass options by setting env variables or passing cli arguments (see
 
 This are the available configuration options with it's default values:
 
-```json
+```
 {
-	"accountName": "", // The VTEX account name
-	"apiKey": "", // A valid API Key for your account
-	"apiToken": "", // A valid API Token for your account
-	"placedOrdersQuantity": 1, // The amount of orders you want to place
-	"placedOrdersConcurrency": 1, // The amount of orders that will be placed concurrently
-	"placeDifferentOrders": false, // Whether or not every order should be different from each other
-	"salesChannel": 1, // The sales channel where orders will be placed
-	"seller": "1", // The seller where orders will be placed
-	"itemsSearchText": "", // Some text to search products that will be used for placing orders
-	"itemsSearchFilter": { // Filters to search products that will be used for placing orders. You can choose only one filter so far.
-		"productId": null,
-		"skuId": null,
-		"referenceId": null,
-		"ean": null,
-		"categoryTree": null,
-		"priceRange": null,
-		"clusterId": null
-	},
-	"minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
-	"maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
-	"customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses
-	"paymentSystemId": "" // The payment system ID that should be used to place the orders
+  "accountName": "", // The VTEX account name
+  "apiKey": "", // A valid API Key for your account
+  "apiToken": "", // A valid API Token for your account
+  "placedOrdersQuantity": 1, // The amount of orders you want to place
+  "placedOrdersConcurrency": 1, // The amount of orders that will be placed concurrently
+  "placeDifferentOrders": false, // Whether or not every order should be different from each other
+  "salesChannel": 1, // The sales channel where orders will be placed
+  "seller": "1", // The seller where orders will be placed
+  "itemsSearchText": "", // Some text to search products that will be used for placing orders
+  "itemsSearchFilter": { // Filters to search products that will be used for placing orders. You can choose only one filter so far.
+    "productId": null,
+    "skuId": null,
+    "referenceId": null,
+    "ean": null,
+    "categoryTree": null,
+    "priceRange": null,
+    "clusterId": null
+  },
+  "minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
+  "maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
+  "customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses
+  "paymentSystemId": "" // The payment system ID that should be used to place the orders
 }
 ```
