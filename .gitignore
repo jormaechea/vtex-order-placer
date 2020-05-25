@@ -25,4 +25,4 @@ node_modules/
 .env
 
 # package config files
-.vtexorderplacerrc
+.vtexrc

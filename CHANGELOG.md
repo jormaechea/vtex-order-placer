@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Multiple catalog filters can be used now
+- Multiple catalog filters can now be used
 - Simulation retries to guarantee items quantity in each order
 - Payment data is now customized based in payment group
+
+### Changed
+- Configuration file moved to .vtexrc **BREAKING CHANGE**
 
 ### Fixed
 - Bug fixes for edge cases

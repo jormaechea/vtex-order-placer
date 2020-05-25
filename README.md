@@ -30,7 +30,9 @@ npx vtex-order-placer
 
 ## Configuration file
 
-This package uses [rc](https://www.npmjs.com/package/rc) to handle runtime configurations. You can configure by using any of [this files](https://www.npmjs.com/package/rc#standards).
+The runtime configurations are handled by a `.vtexrc` file, normally created in your project root dir, or in the current directory if running with npx.
+
+This package uses [rc](https://www.npmjs.com/package/rc) to load config file. It will look for it in [this locations](https://www.npmjs.com/package/rc#standards).
 
 You can also pass options by setting env variables or passing cli arguments (see rc documentation for more details).
 
