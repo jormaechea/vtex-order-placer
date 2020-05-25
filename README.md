@@ -6,18 +6,59 @@
 
 A package to place orders in VTEX eCommerce
 
+## Important
+
+This package is still Work in progress. It's API may change until it reaches v1.
+
 ## Installation
+
 ```sh
 npm install vtex-order-placer
 ```
 
-## API
+Or you can also install it globally to use as a CLI command anywhere:
 
-
-## Usage
-```js
-const VtexOrderPlacer = require('vtex-order-placer');
-
+```sh
+npm install --global vtex-order-placer
 ```
 
-## Examples
+Or you can just run it without installing:
+
+```sh
+npx vtex-order-placer
+```
+
+## Configuration file
+
+This package uses [rc](https://www.npmjs.com/package/rc) to handle runtime configurations. You can configure by using any of [this files](https://www.npmjs.com/package/rc#standards).
+
+You can also pass options by setting env variables or passing cli arguments (see rc documentation for more details).
+
+This are the available configuration options with it's default values:
+
+```json
+{
+	"accountName": "", // The VTEX account name
+	"apiKey": "", // A valid API Key for your account
+	"apiToken": "", // A valid API Token for your account
+	"placedOrdersQuantity": 1, // The amount of orders you want to place
+	"placedOrdersConcurrency": 1, // The amount of orders that will be placed concurrently
+	"placeDifferentOrders": false, // Whether or not every order should be different from each other
+	"salesChannel": 1, // The sales channel where orders will be placed
+	"seller": "1", // The seller where orders will be placed
+	"itemsSearchText": "", // Some text to search products that will be used for placing orders
+	"itemsSearchFilter": { // Filters to search products that will be used for placing orders. You can choose only one filter so far.
+		"productId": null,
+		"skuId": null,
+		"referenceId": null,
+		"ean": null,
+		"categoryTree": null,
+		"priceRange": null,
+		"clusterId": null
+	},
+	"minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
+	"maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
+	"customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses
+	"paymentSystemId": "" // The payment system ID that should be used to place the orders
+}
+```
