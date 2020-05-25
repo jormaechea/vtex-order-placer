@@ -1,6 +1,6 @@
 {
   "name": "vtex-order-placer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A package to place orders in VTEX eCommerce",
   "main": "lib/index.js",
   "scripts": {
