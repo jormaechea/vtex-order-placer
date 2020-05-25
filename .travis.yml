@@ -1,15 +1,35 @@
 language: node_js
 node_js:
-  - "lts/*"
+  - '10'
+  - '12'
 cache: npm
 script:
-  - |
-    # Run test script
-    npm run test-ci
-after_script:
-  - |
-    # Upload coverage to coveralls
-    if [[ -d .nyc_output ]]; then
-      npm install --save-dev coveralls@2
-      nyc report --reporter=text-lcov | coveralls
-    fi
+  - npm run lint
+  - npm run test
+  # - npm run test-ci
+jobs:
+  include:
+    # - stage: master-coverage
+    #   if: (branch = master)
+    #   git:
+    #     depth: 1
+    #   node_js: '12'
+    #   deploy:
+    #     - provider: script
+    #       edge: true
+    #       script: bash .deploy-coverage.sh
+    - stage: release
+      if: (tag =~ ^v)
+      git:
+        depth: 1
+      node_js: '12'
+      deploy:
+        - provider: npm
+          edge: true
+          registry: https://registry.npmjs.org
+          access: public
+          on:
+            tags: true
+            repo: jormaechea/vtex-order-placer
+      # after_deploy:
+      #   - bash .deploy-coverage.sh
