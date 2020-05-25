@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Bug fixes for edge cases
 - Payment system set in config file is now used everywhere
+- Validation for catalog filters now works as expected
+- Catalog is now filtered correctly to avoid unavailable items in simulations
+- Removed side effect affecting the options object
 
 ## [0.1.1] - 2020-05-25
 ### Fixed
