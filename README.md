@@ -7,22 +7,22 @@
 
 <p align="center">
 
-	<a href="https://www.npmjs.com/package/vtex-order-placer">
-		<img src="https://badge.fury.io/js/vtex-order-placer.svg" alt="npm version" />
-	</a>
+<a href="https://www.npmjs.com/package/vtex-order-placer">
+	<img src="https://badge.fury.io/js/vtex-order-placer.svg" alt="npm version" />
+</a>
 
-	<a href="https://travis-ci.org/jormaechea/vtex-order-placer">
-		<img src="https://travis-ci.org/jormaechea/vtex-order-placer.svg?branch=master" alt="Build status" />
-	</a>
+<a href="https://travis-ci.org/jormaechea/vtex-order-placer">
+	<img src="https://travis-ci.org/jormaechea/vtex-order-placer.svg?branch=master" alt="Build status" />
+</a>
 
-	<a href="https://coveralls.io/github/jormaechea/vtex-order-placer?branch=master">
-		<img src="https://coveralls.io/repos/github/jormaechea/vtex-order-placer/badge.svg?branch=master" alt="Coverage status" />
-	</a>
+<a href="https://coveralls.io/github/jormaechea/vtex-order-placer?branch=master">
+	<img src="https://coveralls.io/repos/github/jormaechea/vtex-order-placer/badge.svg?branch=master" alt="Coverage status" />
+</a>
 
 </p>
 
 <p align="center">
-	A package to place orders in VTEX eCommerce
+	<strong>A package to place orders in VTEX eCommerce</strong>
 </p>
 
 ## Important
