@@ -25,11 +25,11 @@
 	<strong>A package to place orders in VTEX eCommerce</strong>
 </p>
 
-## Important
+## :loudspeaker: Important
 
 This package is still Work in progress. It's API may change until it reaches v1.
 
-## Installation
+## :inbox_tray: Installation
 
 ```sh
 npm install vtex-order-placer
@@ -47,7 +47,7 @@ Or you can just run it without installing:
 npx vtex-order-placer
 ```
 
-## Configuration file
+## :hammer_and_wrench: Configuration file
 
 The runtime configurations are handled by a `.vtexrc` file, normally created in your project root dir, or in the current directory if running with npx.
 
