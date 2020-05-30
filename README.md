@@ -1,10 +1,29 @@
-# vtex-order-placer
+<p align="center">
+  <img src="https://github.com/jormaechea/vtex-order-placer/raw/master/assets/bot.png" alt="Bot" width="160" />
+</p>
 
-[![Build Status](https://travis-ci.org/jormaechea/vtex-order-placer.svg?branch=master)](https://travis-ci.org/jormaechea/vtex-order-placer)
-[![Coverage Status](https://coveralls.io/repos/github/jormaechea/vtex-order-placer/badge.svg?branch=master)](https://coveralls.io/github/jormaechea/vtex-order-placer?branch=master)
-[![npm version](https://badge.fury.io/js/vtex-order-placer.svg)](https://www.npmjs.com/package/vtex-order-placer)
+<h1 align="center">VTEX Order Placer</h1>
 
-A package to place orders in VTEX eCommerce
+
+<p align="center">
+
+	<a href="https://www.npmjs.com/package/vtex-order-placer">
+		<img src="https://badge.fury.io/js/vtex-order-placer.svg" alt="npm version" />
+	</a>
+
+	<a href="https://travis-ci.org/jormaechea/vtex-order-placer">
+		<img src="https://travis-ci.org/jormaechea/vtex-order-placer.svg?branch=master" alt="Build status" />
+	</a>
+
+	<a href="https://coveralls.io/github/jormaechea/vtex-order-placer?branch=master">
+		<img src="https://coveralls.io/repos/github/jormaechea/vtex-order-placer/badge.svg?branch=master" alt="Coverage status" />
+	</a>
+
+</p>
+
+<p align="center">
+	A package to place orders in VTEX eCommerce
+</p>
 
 ## Important
 
@@ -40,9 +59,11 @@ This are the available configuration options with it's default values:
 
 ```
 {
-  "accountName": "", // The VTEX account name
-  "apiKey": "", // A valid API Key for your account
-  "apiToken": "", // A valid API Token for your account
+  "accountName": "", // REQUIRED. The VTEX account name
+  "apiKey": "", // REQUIRED. A valid API Key for your account
+  "apiToken": "", // REQUIRED. A valid API Token for your account
+  "customerEmail": "", // REQUIRED. The email of the customer for the order. This must be an existing customer with registered addresses
+  "paymentSystemId": null, // REQUIRED. The payment system ID (Number) that should be used to place the orders
   "placedOrdersQuantity": 1, // The amount of orders you want to place
   "placedOrdersConcurrency": 1, // The amount of orders that will be placed concurrently
   "placeDifferentOrders": false, // Whether or not every order should be different from each other
@@ -53,7 +74,6 @@ This are the available configuration options with it's default values:
                           // Each element of the array must be an object with two properties: `type` and `value`. `type` can be one of the following: `productId`, `skuId`, `referenceId`, `ean`, `categoryTree`, `priceRange`, `clusterId`
   "minItemsQuantity": 1, // Min quantity of different SKUs that each order must contain
   "maxItemsQuantity": 1, // Max quantity of different SKUs that each order must contain
-  "customerEmail": "", // The email of the customer for the order. This must be an existing customer with registered addresses
-  "paymentSystemId": null // The payment system ID (Number) that should be used to place the orders
+  "interactiveShipping": false // Indicates if the logistic of each item should be selected by user or automatically
 }
 ```
