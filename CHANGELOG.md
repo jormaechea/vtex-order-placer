@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.1] - 2020-07-22
+### Fixed
+- Bug for multi-item orders
+- Bug for shipping windows with price
+
 ## [0.3.0] - 2020-05-30
 ### Added
 - `interactiveShipping` option added to allow user to select logistics for each item
