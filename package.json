@@ -36,7 +36,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "lllog": "^1.1.2",
     "moment": "^2.26.0",
     "prompts": "^2.3.2",
